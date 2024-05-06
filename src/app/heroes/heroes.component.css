@@ -1,0 +1,68 @@
+/*Aqui si le da estilo a la columna de juegos y peliculas que hay*/
+/*Estilo para los botones*/
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+ /*Animacion para el cursor*/
+.heroes li {
+  position: relative;
+  cursor: pointer;
+}
+ /*Animacion para el cursor*/
+.heroes li:hover {
+  left: .1em;
+}
+/*Para el contendio encerado*/
+.heroes a {
+  color: #333;
+  text-decoration: none;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+}
+/*Estilo al selecionar*/
+.heroes a:hover {
+  color: #857a05;
+  background-color: #0a0a0a;
+}
+/*Estilo al selecionar pero al pulsar*/
+.heroes a:active {
+  background-color: #857a05;
+  color: #0a0a0a;
+}
+/*Para los numeros o id y el contenido*/
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #405061;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+/**/
+.container {
+  display: flex;
+}
+
+.games, .movies {
+  flex: 1;
+}
+
+.games {
+  margin-right: 2em; /* Ajusta el margen entre las dos secciones */
+}

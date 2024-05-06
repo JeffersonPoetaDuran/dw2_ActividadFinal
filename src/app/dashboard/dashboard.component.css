@@ -1,0 +1,49 @@
+/*Esta parte controla el estilo para la mitad de la pagina. 
+Comienza desde: juegos y peliculas que te recomendamos hasta
+los botones*/
+
+/*La palabra: juegos y peliculas que te recomendamos*/
+h2 {
+    text-align: center;
+    padding: 20px 0;
+  }
+/*Para los 4 botones, para que esten en filas*/
+  .heroes-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+/*Darle estilo a los botones y al texto*/
+  a {
+    background-color: #1c8cc9; /*Color b*/
+    border-radius: 4px; /*Borde en la puntas b*/
+    padding: 1rem; /*No comprimir al texto b*/
+    font-size: 1.2rem; /*Agrendar un poco el t*/
+    text-decoration: none; /*Sin decoracion, (Si lo quito aparece rayado en la parte de abajo del tex)*/
+    display: inline-block;/*mostrar el elemento como un bloque en línea*/
+    color: #030303; /*Color t*/
+    text-align: center; /*Centrar t*/
+    width: 100%;
+    min-width: 70px;
+    margin: .5rem auto;
+    box-sizing: border-box;
+  
+    /* flexbox */
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  
+/* Para los 4 botones, darle un estilo menos estirados como botones */
+  @media (min-width: 600px) {
+    a {
+      width: 18%; /*Tamaño alargado del boton*/
+      box-sizing: content-box;
+    }
+  }
+
+  /* Darle una animacion cuando el curso esta dentro del boton*/
+  a:hover {
+    background-color: #41c1d8;
+  }

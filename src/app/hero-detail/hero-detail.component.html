@@ -1,0 +1,17 @@
+<div *ngIf="hero">
+  <h2>Detalles de: {{hero.name | uppercase}}</h2>
+  <!-- Nombre -->
+  <div>
+    <label for="hero-name">Nombre: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Nombre del héroe"/>
+  </div>
+
+  <!-- Descripción -->
+  <div>
+    <label for="hero-description">Descripción: </label>
+    <p id="hero-description">{{ hero.description ? hero.description : 'No hay descripción disponible' }}</p>
+  </div>
+
+  <!-- Botón Volver -->
+  <button type="button" (click)="goBack()">Volver</button>
+</div>

@@ -1,0 +1,42 @@
+/* AppComponent's private CSS styles */
+
+/* Estilos generales */
+h1 {
+  margin-bottom: 0;
+  color: #FFD700; /* Amarillo dorado para el texto */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+}
+
+nav {
+  display: flex; /* Utilizamos flexbox para alinear los elementos */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  margin-top: 10px; /* Agrega un poco de margen superior */
+}
+
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  background-color: #f5900b; /* Marrón oscuro para el fondo de los enlaces */
+  color: #FFF; /* Color blanco para el texto de los enlaces */
+  border-radius: 4px;
+  margin-left: 1cm; /* Agrega un margen izquierdo de 1 centímetro */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+nav a:hover {
+  color: #FFF; /* Color blanco para el texto cuando se pasa el mouse por encima */
+  background-color: #b47500; /* Naranja para el fondo cuando se pasa el mouse por encima */
+}
+
+nav a:active {
+  background-color: #FF8C00; /* Para los 2 botones */
+}
+
+.header {
+  background-color: rgb(255, 250, 250);
+  padding: 2rem;
+  display: flex; /* Utilizamos flexbox para alinear los elementos */
+  justify-content: space-between; /* Distribuye los elementos horizontalmente con espacio entre ellos */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  margin-bottom: 10px; /* Ajusta el margen inferior del encabezado */
+}

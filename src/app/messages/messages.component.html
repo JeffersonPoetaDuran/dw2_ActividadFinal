@@ -1,0 +1,5 @@
+<div *ngIf="messageService.messages.length">
+        <h2 class="Mensaje">Historial de Navegacion</h2>
+        <button type="button" class="clear" (click)="confirmDelete()">Borrar Historial</button>
+        <div *ngFor='let message of messageService.messages'> {{message}} </div>
+</div>

@@ -1,0 +1,21 @@
+/*Esto es para la parte del mensaje y boton mensaje*/
+/*Text mensaje*/
+.Mensaje {
+  color: #e9e1e1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  background-color: black;
+}
+/*Estilo para el Boton borrar*/
+.clear {
+  color: #333;
+  background-color: #eee;
+  margin-bottom: 12px;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.clear:hover {
+  color: white;
+  background-color: #42545C;
+}

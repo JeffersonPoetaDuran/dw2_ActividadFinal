@@ -1,0 +1,54 @@
+<h2>JUEGOS Y PELICULAS</h2>
+
+<div class="container">
+  <div class="games">
+    <h3>Juegos</h3>
+    <ul class="heroes">
+      <li *ngFor="let juego of juegos">
+        <a routerLink="/detail/{{juego.id}}">
+          <span class="badge">{{juego.id}}</span> {{juego.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="movies">
+    <h3>Películas</h3>
+    <ul class="heroes">
+      <li *ngFor="let pelicula of peliculas">
+        <a routerLink="/detail/{{pelicula.id}}">
+          <span class="badge">{{pelicula.id}}</span> {{pelicula.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!--<h2>My Heroes</h2>-->
+<!--<ul class="heroes">-->
+<!--bucle para iterar sobre el arreglo de heroes-->
+<!--<li *ngFor="let hero of heroes">-->
+    <!-- boton para seleccionar un heroe -->
+    <!--<button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
+      <span class="badge">{{hero.id}}</span><!--indicador de identificación del heroe -->
+    <!--  <span class="name">{{hero.name}}</span> <!--Nombre del heroe-->
+    <!--</button>
+  </li>
+</ul>
+<!--Modificacion aqui-->
+<!--<app-hero-detail [hero]="selectedHero"></app-hero-detail>-->
+<!--Edicion de elementos-->
+<!-- Detalles del heroe seleccionado -->
+
+<!-- <div *ngIf="selectedHero">
+  <h2>Nombre: {{selectedHero.name | uppercase}} </h2>
+   Identificacion del heroe -->
+  <!-- <div>id: {{selectedHero.id}}</div>
+  <div>
+     Para editar el nombre del heroe -->
+    <!-- <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
+  </div>
+</div> -->
+
+
